@@ -1,0 +1,25 @@
+.venv*/
+.env
+.env.*
+!.env.example
+var/
+node_modules/
+frontend/dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+eval/data/
+*.db
+*.db-shm
+*.db-wal
+.claude/
+*.tsbuildinfo
+
+# Local LLM gateway credential
+backend/app/gateway_settings.py
+
+# AI evaluation response cache (contains extracted document data)
+eval/.cache/

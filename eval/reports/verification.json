@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-28",
+  "environment": {"os": "Windows 11", "python": "3.13.5", "node": "22.17.1"},
+  "backend_and_evaluation": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest backend/tests eval/test_eval.py --cov=backend.app --cov-report=term-missing --cov-report=json:eval/reports/coverage.json --junitxml=eval/reports/tests.xml -q",
+    "passed": 92,
+    "failed": 0,
+    "warnings": 1,
+    "warning": "Starlette TestClient use of httpx is deprecated",
+    "seconds": 23.88,
+    "statement_coverage_percent_rounded": 82,
+    "statements": 1631,
+    "missed_statements": 294,
+    "includes_real_file_pdf_to_pdf_and_pdf_to_xlsx_match_and_mismatch": true
+  },
+  "frontend": {
+    "commands": ["npm --prefix frontend run test -- --run", "npm --prefix frontend run build"],
+    "passed": 14,
+    "test_files_passed": 2,
+    "production_build_passed": true,
+    "bundle_js_kb": 174.18,
+    "bundle_js_gzip_kb": 55.15
+  },
+  "browser": {
+    "command": ".\\.venv\\Scripts\\python.exe -m scripts.demo_server",
+    "passed": 1,
+    "test_seconds": 59.4,
+    "real_api_worker_db_and_chrome": true,
+    "formats": ["pdf", "jpg", "png", "tiff", "xlsx", "xls", "csv"],
+    "uploads": 8,
+    "recording": "browser/walkthrough-upload-evidenc-ec198--reconciliation-walkthrough/video.webm",
+    "recording_narrated": false,
+    "semantic_browser_mode": "explicit keyword fallback; vector index disabled",
+    "prior_failed_replay": "Editing frontend source during a replay caused development hot reload, cleared memory-only auth, and the replay timed out after a 401. Stable-source replay passed."
+  },
+  "dependencies": {
+    "pip_check_passed": true,
+    "python_known_advisories": 0,
+    "npm_known_advisories": 0,
+    "lock_dry_run_resolution_passed": true,
+    "fresh_final_lock_reinstall_executed": false
+  },
+  "semantic": {
+    "real_bge_inference_and_embedded_qdrant_passed": true,
+    "checks": ["index/query", "owner isolation", "delete"],
+    "network_qdrant_executed": false
+  },
+  "not_executed_or_not_claimed": [
+    "live paid provider extraction",
+    "real labeled private-document evaluation",
+    "PostgreSQL integration",
+    "Docker build/run",
+    "network Qdrant integration",
+    "concurrent mixed-load and queue-latency benchmark",
+    "1000-page scanned-PDF throughput",
+    "independent reconciliation accuracy benchmark",
+    "Gitleaks/Trivy or deployed CI",
+    "production certification"
+  ]
+}

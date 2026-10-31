@@ -1,0 +1,18 @@
+# Isolated main-pipeline worker profile; run API/frontend from the base environment.
+# Do not include requirements.txt: Gradio needs Pillow<13, unlike the base pin.
+# On Windows DocVortex supplies onnxruntime-directml. Do not also install the
+# base onnxruntime/FastEmbed stack into this environment (shared module files).
+# This profile runs with SEMANTIC_ENABLED=false; baseline OCR stays in .venv.
+mineru==4.0.12
+docvortex==0.6.7
+Pillow==12.3.0
+pydantic==2.12.5
+SQLAlchemy==2.0.41
+psycopg[binary]==3.2.9
+PyMuPDF==1.25.5
+openpyxl==3.1.5
+xlrd==2.0.1
+charset-normalizer==3.4.2
+defusedxml==0.7.1
+anthropic==0.100.0
+qdrant-client==1.14.2

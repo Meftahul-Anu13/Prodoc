@@ -1,0 +1,9 @@
+# Standalone test environment; do not add these to production requirements.
+anthropic==0.100.0
+pydantic==2.11.4
+openpyxl==3.1.5
+xlrd==2.0.1
+charset-normalizer==3.4.2
+defusedxml==0.7.1
+# Only used to generate synthetic .xls samples, not to parse originals.
+xlwt==1.3.0

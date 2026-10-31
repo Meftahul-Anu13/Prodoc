@@ -1,0 +1,12 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "backend": "Qdrant embedded",
+  "real_embedding_inference": true,
+  "checks": [
+    "index and query",
+    "owner payload isolation",
+    "delete"
+  ],
+  "passed": true,
+  "limitation": "Embedded contract check, not deployed Qdrant network integration or retrieval accuracy benchmark"
+}

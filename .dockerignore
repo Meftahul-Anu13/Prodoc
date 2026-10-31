@@ -1,0 +1,10 @@
+**
+!requirements.txt
+!backend/
+!backend/app/
+!backend/app/*.py
+!prompts/
+!prompts/*.txt
+!scripts/
+!scripts/setup_models.py
+!Dockerfile
