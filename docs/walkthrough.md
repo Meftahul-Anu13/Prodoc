@@ -31,7 +31,7 @@ The script below is for a narrated recording and takes about 6 minutes.
 | 4:10 | Search `Nortwind`, then `delivery charges` | Typo tolerance and semantic search, with the reason for each match |
 | 4:40 | Reconciliation: pick the PDF and a spreadsheet invoice | Cross-verification, field by field |
 | 5:10 | Upload `eval\data\test\corrupt.pdf` and a non-financial PDF | Failures are clear, and irrelevant files never reach the model |
-| 5:30 | [AI report](../eval/reports/ai/report.md) | The measured results, and what wasn't measured, including the 1000-page file |
+| 5:30 | [AI report](../eval/reports/ai/report.md) | The measured results, including the 1000-page file, and their limits |
 
 ## Older recording
 

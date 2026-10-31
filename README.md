@@ -10,22 +10,24 @@ Held-out synthetic test set, gateway model `gpt-6.1-sol`. Full report: [eval/rep
 
 | Metric | Old heuristic baseline | AI pipeline |
 |---|---|---|
-| Held-out documents processed (excluding the long PDF) | 27/27 | **27/27** |
-| Invoice fields correct on those documents | 225/248 = 90.73% | **247/248 = 99.60%** |
-| Line-item fields correct (AI only) | not comparable | **246/248 = 99.19%** |
-| Line-item rows correct (AI only) | not comparable | **61/62 = 98.39%** |
-| Extra 4-page, 2-invoice Northwind sample | not run | **16/16 fields correct** |
+| Valid documents processed | 28/28 | **29/29** |
+| Invoice fields correct | 8225/8248 = 99.72% | **8263/8264 = 99.99%** |
+| Same, excluding the 1000-page file | 225/248 = 90.73% | **263/264 = 99.62%** |
+| Line-item fields correct | 8173/8248 = 99.09% | **8334/8336 = 99.98%** |
+| Line-item rows correct | 2036/2062 = 98.74% | **2083/2084 = 99.95%** |
+| 1000-page PDF: invoices found and fields correct | digital text only | **1000/1000 invoices, 8000/8000 header fields, 8000/8000 line-item fields** |
 | Corrupt files rejected | 7/7 | **7/7** |
-| Time per document (all 28) | p50 0.31 s, p95 6.33 s | **p50 50.5 s, p95 93.1 s** |
+| Time per document, excluding the 1000-page file | p50 0.31 s, p95 6.33 s | **p50 50.5 s, p95 93.1 s** |
 
 **How to read these numbers**
 
 - The data is synthetic and its labels come from the same generator, so this is not real-world accuracy.
 - All field errors are on `family-5-poor-scan.png`, the deliberately degraded scan.
-- The report file adds the Northwind sample to its totals, so it reads 263/264 (99.62%) over 28 documents.
+- The AI column covers 29 documents, one more than the baseline's 28, because it adds a 4-page, 2-invoice Northwind sample (16/16 fields correct).
 - Every AI invoice goes to human review by design, so the 0% false-accept rate proves nothing about detection quality.
-- **The 1000-page PDF has not finished a full AI extraction.** It is planned into 167 requests of up to 6 invoices, each taking about 200 s, so the whole file needs roughly 2 to 3 hours of model time. 91 of the 167 requests are done and cached. Early attempts failed because 12-invoice batches took 316 s, over the gateway's 280 s limit, and the latest run stopped when the gateway account reached its usage limit. Reading the file (0.7 s) and planning it are measured.
-- Long scanned PDFs still run through OCR as one pass, with no checkpoints.
+- **The 1000-page file is the easy case:** a digital PDF with a clean text layer, one invoice per page and a single template. It shows that splitting, batching and caching work at that size, not that accuracy holds on long scanned or messy files.
+- **The 1000-page run was not one clean pass.** It is split into 167 requests of up to 6 invoices, each taking about 200 s, and finished across three resumed runs (about 2.5 hours of running time, with the answers cached between runs). Early attempts failed because 12-invoice batches took 316 s, over the gateway's 280 s limit, and one run stopped when the gateway account hit its usage limit. The whole evaluation used about 1.8M input and 1.1M output tokens.
+- Long scanned PDFs still run through OCR as one pass, with no checkpoints, and weren't tested at this size.
 
 ## How it works
 

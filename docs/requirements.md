@@ -13,7 +13,7 @@ Each requirement mapped to its code and evidence. Test runs below are from 2026-
 | Multi-page PDFs, multiple sheets | Done | `sources.py`, `segmentation.py` | Multi-invoice family 64/64 fields |
 | Poor image quality | Done | MinerU | `family-5-poor-scan.png` 7/8 fields, the only field error |
 | Corrupted files | Done | Signature and structure checks | 7/7 rejected |
-| PDFs of about 1000 pages | **Partial** | Segmentation, batching, cache, retries | Reading (0.7 s) and planning (167 requests) measured; 91 of 167 requests extracted and cached. **The full extraction has not finished**: the gateway account reached its usage limit. Long scans have no OCR checkpoints |
+| PDFs of about 1000 pages | Done for digital PDFs | Segmentation, batching, cache, retries | A 1000-page digital PDF produced 1000/1000 invoices with 8000/8000 header and 8000/8000 line-item fields correct, in 167 requests over three resumed runs (about 2.5 hours). One template, clean text. **Long scanned PDFs are untested and have no OCR checkpoints** |
 | Extract 8 fields and line items as JSON | Done | `observation.py` | 99.60% fields, 99.19% line fields |
 | No invented values | Done | Grounding nulls unsupported values | Adversarial tests; 1/487 unsupported-value proxy |
 | Missing fields, bad numbers | Done | `financial.py` | Unit tests; `missing_field` family |
@@ -27,7 +27,7 @@ Each requirement mapped to its code and evidence. Test runs below are from 2026-
 | Semantic search | Done | `search.py`, Qdrant, BGE | Live checks in embedded mode; retrieval accuracy not benchmarked |
 | React UI for the full workflow | Done | `frontend/src/App.tsx` | 19 tests; real Chrome check on 2026-10-31, including phone width, and a [recorded walkthrough](walkthrough.md) |
 | Automated tests for all listed areas | Done | `backend/tests`, `eval/test_eval.py`, `frontend/src` | [Test results](../eval/reports/test-results.md) |
-| Labeled evaluation with measured metrics | **Partial** | `eval/run_ai.py` | [Report](../eval/reports/ai/report.md). 27 valid held-out files, the Northwind sample and 7 corrupt files measured; the 1000-page file is not evaluated |
+| Labeled evaluation with measured metrics | Done | `eval/run_ai.py` | [Report](../eval/reports/ai/report.md). 29 valid documents (including the 1000-page file and the Northwind sample) and 7 corrupt files measured. Synthetic, generator-labeled data |
 
 ## Cross-verification
 
