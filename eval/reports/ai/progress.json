@@ -8831,6 +8831,1796 @@
   "predictions": []
  },
  {
+  "id": "extra/northwind-invoice-pack-4-pages.pdf",
+  "family": "extra",
+  "format": "pdf",
+  "category": "multi_page_pack",
+  "expected_failure": false,
+  "expected_units": 4,
+  "sha256": "df52e344a258432fbb07cf880a64cc53c3a4a62f26a7536c1985207ec72b3909",
+  "success": true,
+  "elapsed_seconds": 233.5339101999998,
+  "expected_invoices": 2,
+  "error": null,
+  "predicted_invoices": 2,
+  "usage": {
+   "model_calls": 2,
+   "input_tokens": 9952,
+   "output_tokens": 7541,
+   "cache": "miss"
+  },
+  "reader": "pymupdf-text-layer",
+  "guardrail": "financial",
+  "review_flags": [],
+  "segmentation": {
+   "mode": "single",
+   "segments": 1,
+   "requests": 1,
+   "skipped_pages": []
+  },
+  "finalization_blocked": false,
+  "predictions": [
+   {
+    "line_items": [
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000012",
+        "region_id": "r3",
+        "source_text": "A4 copy paper, 80gsm (box of 5 reams)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000012",
+        "region_id": "r3",
+        "source_text": "A4 copy paper, 80gsm (box of 5 reams) | 40 | 18.50 | 740.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000012",
+        "region_id": "r3",
+        "source_text": "A4 copy paper, 80gsm (box of 5 reams) | 40 | 18.50 | 740.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000012",
+        "region_id": "r3",
+        "source_text": "A4 copy paper, 80gsm (box of 5 reams) | 40 | 18.50 | 740.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "A4 copy paper, 80gsm (box of 5 reams)",
+      "quantity": "40",
+      "unit_price": "18.50",
+      "discount": null,
+      "tax": null,
+      "line_total": "740.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000013",
+        "region_id": "r3",
+        "source_text": "Black toner cartridge TN-2420",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000013",
+        "region_id": "r3",
+        "source_text": "Black toner cartridge TN-2420 | 12 | 64.90 | 778.80",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000013",
+        "region_id": "r3",
+        "source_text": "Black toner cartridge TN-2420 | 12 | 64.90 | 778.80",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000013",
+        "region_id": "r3",
+        "source_text": "Black toner cartridge TN-2420 | 12 | 64.90 | 778.80",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Black toner cartridge TN-2420",
+      "quantity": "12",
+      "unit_price": "64.90",
+      "discount": null,
+      "tax": null,
+      "line_total": "778.80"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 14,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000014",
+        "region_id": "r3",
+        "source_text": "Ergonomic office chair, mesh back",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 14,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000014",
+        "region_id": "r3",
+        "source_text": "Ergonomic office chair, mesh back | 6 | 189.00 | 1,134.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 14,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000014",
+        "region_id": "r3",
+        "source_text": "Ergonomic office chair, mesh back | 6 | 189.00 | 1,134.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 14,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000014",
+        "region_id": "r3",
+        "source_text": "Ergonomic office chair, mesh back | 6 | 189.00 | 1,134.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Ergonomic office chair, mesh back",
+      "quantity": "6",
+      "unit_price": "189.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "1134.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 15,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000015",
+        "region_id": "r3",
+        "source_text": "Height-adjustable desk 160x80",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 15,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000015",
+        "region_id": "r3",
+        "source_text": "Height-adjustable desk 160x80 | 4 | 412.00 | 1,648.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 15,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000015",
+        "region_id": "r3",
+        "source_text": "Height-adjustable desk 160x80 | 4 | 412.00 | 1,648.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 15,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000015",
+        "region_id": "r3",
+        "source_text": "Height-adjustable desk 160x80 | 4 | 412.00 | 1,648.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Height-adjustable desk 160x80",
+      "quantity": "4",
+      "unit_price": "412.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "1648.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 16,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000016",
+        "region_id": "r3",
+        "source_text": "Whiteboard markers, assorted (pack of 12)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 16,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000016",
+        "region_id": "r3",
+        "source_text": "Whiteboard markers, assorted (pack of 12) | 25 | 9.75 | 243.75",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 16,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000016",
+        "region_id": "r3",
+        "source_text": "Whiteboard markers, assorted (pack of 12) | 25 | 9.75 | 243.75",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 16,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000016",
+        "region_id": "r3",
+        "source_text": "Whiteboard markers, assorted (pack of 12) | 25 | 9.75 | 243.75",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Whiteboard markers, assorted (pack of 12)",
+      "quantity": "25",
+      "unit_price": "9.75",
+      "discount": null,
+      "tax": null,
+      "line_total": "243.75"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 17,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000017",
+        "region_id": "r3",
+        "source_text": "Lever arch files A4 (pack of 10)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 17,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000017",
+        "region_id": "r3",
+        "source_text": "Lever arch files A4 (pack of 10) | 30 | 14.20 | 426.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 17,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000017",
+        "region_id": "r3",
+        "source_text": "Lever arch files A4 (pack of 10) | 30 | 14.20 | 426.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 17,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000017",
+        "region_id": "r3",
+        "source_text": "Lever arch files A4 (pack of 10) | 30 | 14.20 | 426.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Lever arch files A4 (pack of 10)",
+      "quantity": "30",
+      "unit_price": "14.20",
+      "discount": null,
+      "tax": null,
+      "line_total": "426.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 18,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000018",
+        "region_id": "r3",
+        "source_text": "Wireless keyboard and mouse set",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 18,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000018",
+        "region_id": "r3",
+        "source_text": "Wireless keyboard and mouse set | 15 | 38.40 | 576.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 18,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000018",
+        "region_id": "r3",
+        "source_text": "Wireless keyboard and mouse set | 15 | 38.40 | 576.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 18,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000018",
+        "region_id": "r3",
+        "source_text": "Wireless keyboard and mouse set | 15 | 38.40 | 576.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Wireless keyboard and mouse set",
+      "quantity": "15",
+      "unit_price": "38.40",
+      "discount": null,
+      "tax": null,
+      "line_total": "576.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 19,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000019",
+        "region_id": "r3",
+        "source_text": "27-inch IPS monitor",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 19,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000019",
+        "region_id": "r3",
+        "source_text": "27-inch IPS monitor | 8 | 229.00 | 1,832.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 19,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000019",
+        "region_id": "r3",
+        "source_text": "27-inch IPS monitor | 8 | 229.00 | 1,832.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 19,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000019",
+        "region_id": "r3",
+        "source_text": "27-inch IPS monitor | 8 | 229.00 | 1,832.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "27-inch IPS monitor",
+      "quantity": "8",
+      "unit_price": "229.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "1832.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 1,
+        "line": 20,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000020",
+        "region_id": "r3",
+        "source_text": "USB-C docking station",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 1,
+        "line": 20,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000020",
+        "region_id": "r3",
+        "source_text": "USB-C docking station | 8 | 119.50 | 956.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 1,
+        "line": 20,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000020",
+        "region_id": "r3",
+        "source_text": "USB-C docking station | 8 | 119.50 | 956.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 1,
+        "line": 20,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000020",
+        "region_id": "r3",
+        "source_text": "USB-C docking station | 8 | 119.50 | 956.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "USB-C docking station",
+      "quantity": "8",
+      "unit_price": "119.50",
+      "discount": null,
+      "tax": null,
+      "line_total": "956.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000025",
+        "region_id": "r5",
+        "source_text": "Desk organiser, bamboo",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000025",
+        "region_id": "r5",
+        "source_text": "Desk organiser, bamboo | 20 | 16.80 | 336.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000025",
+        "region_id": "r5",
+        "source_text": "Desk organiser, bamboo | 20 | 16.80 | 336.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000025",
+        "region_id": "r5",
+        "source_text": "Desk organiser, bamboo | 20 | 16.80 | 336.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Desk organiser, bamboo",
+      "quantity": "20",
+      "unit_price": "16.80",
+      "discount": null,
+      "tax": null,
+      "line_total": "336.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000026",
+        "region_id": "r5",
+        "source_text": "Shredder, cross-cut, 20 sheets",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000026",
+        "region_id": "r5",
+        "source_text": "Shredder, cross-cut, 20 sheets | 2 | 245.00 | 490.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000026",
+        "region_id": "r5",
+        "source_text": "Shredder, cross-cut, 20 sheets | 2 | 245.00 | 490.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000026",
+        "region_id": "r5",
+        "source_text": "Shredder, cross-cut, 20 sheets | 2 | 245.00 | 490.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Shredder, cross-cut, 20 sheets",
+      "quantity": "2",
+      "unit_price": "245.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "490.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 5,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000027",
+        "region_id": "r5",
+        "source_text": "Laminating pouches A4 (pack of 100)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 5,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000027",
+        "region_id": "r5",
+        "source_text": "Laminating pouches A4 (pack of 100) | 10 | 12.60 | 126.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 5,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000027",
+        "region_id": "r5",
+        "source_text": "Laminating pouches A4 (pack of 100) | 10 | 12.60 | 126.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 5,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000027",
+        "region_id": "r5",
+        "source_text": "Laminating pouches A4 (pack of 100) | 10 | 12.60 | 126.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Laminating pouches A4 (pack of 100)",
+      "quantity": "10",
+      "unit_price": "12.60",
+      "discount": null,
+      "tax": null,
+      "line_total": "126.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 6,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000028",
+        "region_id": "r5",
+        "source_text": "Coffee capsules (box of 100)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 6,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000028",
+        "region_id": "r5",
+        "source_text": "Coffee capsules (box of 100) | 18 | 32.00 | 576.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 6,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000028",
+        "region_id": "r5",
+        "source_text": "Coffee capsules (box of 100) | 18 | 32.00 | 576.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 6,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000028",
+        "region_id": "r5",
+        "source_text": "Coffee capsules (box of 100) | 18 | 32.00 | 576.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Coffee capsules (box of 100)",
+      "quantity": "18",
+      "unit_price": "32.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "576.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 7,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000029",
+        "region_id": "r5",
+        "source_text": "First aid kit, workplace 25 persons",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 7,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000029",
+        "region_id": "r5",
+        "source_text": "First aid kit, workplace 25 persons | 3 | 54.30 | 162.90",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 7,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000029",
+        "region_id": "r5",
+        "source_text": "First aid kit, workplace 25 persons | 3 | 54.30 | 162.90",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 7,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000029",
+        "region_id": "r5",
+        "source_text": "First aid kit, workplace 25 persons | 3 | 54.30 | 162.90",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "First aid kit, workplace 25 persons",
+      "quantity": "3",
+      "unit_price": "54.30",
+      "discount": null,
+      "tax": null,
+      "line_total": "162.90"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 8,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000030",
+        "region_id": "r5",
+        "source_text": "Cable management tray",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 8,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000030",
+        "region_id": "r5",
+        "source_text": "Cable management tray | 12 | 21.90 | 262.80",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 8,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000030",
+        "region_id": "r5",
+        "source_text": "Cable management tray | 12 | 21.90 | 262.80",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 8,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000030",
+        "region_id": "r5",
+        "source_text": "Cable management tray | 12 | 21.90 | 262.80",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Cable management tray",
+      "quantity": "12",
+      "unit_price": "21.90",
+      "discount": null,
+      "tax": null,
+      "line_total": "262.80"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 9,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000031",
+        "region_id": "r5",
+        "source_text": "Noise-cancelling headset",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 9,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000031",
+        "region_id": "r5",
+        "source_text": "Noise-cancelling headset | 10 | 89.00 | 890.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 9,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000031",
+        "region_id": "r5",
+        "source_text": "Noise-cancelling headset | 10 | 89.00 | 890.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 9,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000031",
+        "region_id": "r5",
+        "source_text": "Noise-cancelling headset | 10 | 89.00 | 890.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Noise-cancelling headset",
+      "quantity": "10",
+      "unit_price": "89.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "890.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 10,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000032",
+        "region_id": "r5",
+        "source_text": "Desk lamp LED, dimmable",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 10,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000032",
+        "region_id": "r5",
+        "source_text": "Desk lamp LED, dimmable | 10 | 34.50 | 345.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 10,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000032",
+        "region_id": "r5",
+        "source_text": "Desk lamp LED, dimmable | 10 | 34.50 | 345.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 10,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000032",
+        "region_id": "r5",
+        "source_text": "Desk lamp LED, dimmable | 10 | 34.50 | 345.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Desk lamp LED, dimmable",
+      "quantity": "10",
+      "unit_price": "34.50",
+      "discount": null,
+      "tax": null,
+      "line_total": "345.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 2,
+        "line": 11,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000033",
+        "region_id": "r5",
+        "source_text": "Archive storage boxes (pack of 10)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 2,
+        "line": 11,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000033",
+        "region_id": "r5",
+        "source_text": "Archive storage boxes (pack of 10) | 15 | 27.40 | 411.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 2,
+        "line": 11,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000033",
+        "region_id": "r5",
+        "source_text": "Archive storage boxes (pack of 10) | 15 | 27.40 | 411.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 2,
+        "line": 11,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000033",
+        "region_id": "r5",
+        "source_text": "Archive storage boxes (pack of 10) | 15 | 27.40 | 411.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Archive storage boxes (pack of 10)",
+      "quantity": "15",
+      "unit_price": "27.40",
+      "discount": null,
+      "tax": null,
+      "line_total": "411.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 3,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000038",
+        "region_id": "r7",
+        "source_text": "Sticky notes 76x76 (pack of 24)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 3,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000038",
+        "region_id": "r7",
+        "source_text": "Sticky notes 76x76 (pack of 24) | 20 | 11.90 | 238.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 3,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000038",
+        "region_id": "r7",
+        "source_text": "Sticky notes 76x76 (pack of 24) | 20 | 11.90 | 238.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 3,
+        "line": 3,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000038",
+        "region_id": "r7",
+        "source_text": "Sticky notes 76x76 (pack of 24) | 20 | 11.90 | 238.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Sticky notes 76x76 (pack of 24)",
+      "quantity": "20",
+      "unit_price": "11.90",
+      "discount": null,
+      "tax": null,
+      "line_total": "238.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 3,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000039",
+        "region_id": "r7",
+        "source_text": "Installation and assembly service (hours)",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 3,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000039",
+        "region_id": "r7",
+        "source_text": "Installation and assembly service (hours) | 14 | 45.00 | 630.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 3,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000039",
+        "region_id": "r7",
+        "source_text": "Installation and assembly service (hours) | 14 | 45.00 | 630.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 3,
+        "line": 4,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000039",
+        "region_id": "r7",
+        "source_text": "Installation and assembly service (hours) | 14 | 45.00 | 630.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Installation and assembly service (hours)",
+      "quantity": "14",
+      "unit_price": "45.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "630.00"
+     }
+    ],
+    "needs_review": true,
+    "invoice_number": "NW-2026-0417",
+    "invoice_date": "14 October 2026",
+    "supplier_name": "Northwind Office Supply Ltd.",
+    "customer_name": "Contoso Engineering GmbH",
+    "currency": "GBP",
+    "subtotal": "12802.25",
+    "tax": "2560.45",
+    "total": "15362.70"
+   },
+   {
+    "line_items": [
+     {
+      "evidence": {
+       "description": {
+        "page": 4,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000056",
+        "region_id": "r12",
+        "source_text": "Printer servicing, annual contract",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 4,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000056",
+        "region_id": "r12",
+        "source_text": "Printer servicing, annual contract | 1 | 480.00 | 480.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 4,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000056",
+        "region_id": "r12",
+        "source_text": "Printer servicing, annual contract | 1 | 480.00 | 480.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 4,
+        "line": 12,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000056",
+        "region_id": "r12",
+        "source_text": "Printer servicing, annual contract | 1 | 480.00 | 480.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Printer servicing, annual contract",
+      "quantity": "1",
+      "unit_price": "480.00",
+      "discount": null,
+      "tax": null,
+      "line_total": "480.00"
+     },
+     {
+      "evidence": {
+       "description": {
+        "page": 4,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000057",
+        "region_id": "r12",
+        "source_text": "Replacement drum unit DR-2400",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "quantity": {
+        "page": 4,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000057",
+        "region_id": "r12",
+        "source_text": "Replacement drum unit DR-2400 | 4 | 72.50 | 290.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "unit_price": {
+        "page": 4,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000057",
+        "region_id": "r12",
+        "source_text": "Replacement drum unit DR-2400 | 4 | 72.50 | 290.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       },
+       "discount": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "tax": {
+        "source_id": null,
+        "region_id": null,
+        "source_text": null,
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": false,
+        "status": "missing"
+       },
+       "line_total": {
+        "page": 4,
+        "line": 13,
+        "kind": "pdf_text_layer",
+        "source_id": "b0000057",
+        "region_id": "r12",
+        "source_text": "Replacement drum unit DR-2400 | 4 | 72.50 | 290.00",
+        "method": "llm_observation",
+        "source_method": null,
+        "grounded": true,
+        "status": "grounded"
+       }
+      },
+      "description": "Replacement drum unit DR-2400",
+      "quantity": "4",
+      "unit_price": "72.50",
+      "discount": null,
+      "tax": null,
+      "line_total": "290.00"
+     }
+    ],
+    "needs_review": true,
+    "invoice_number": "NW-2026-0418",
+    "invoice_date": "21 October 2026",
+    "supplier_name": "Northwind Office Supply Ltd.",
+    "customer_name": "Contoso Engineering GmbH",
+    "currency": "GBP",
+    "subtotal": "770.00",
+    "tax": "154.00",
+    "total": "924.00"
+   }
+  ],
+  "score": {
+   "fields": {
+    "invoice_number": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    },
+    "invoice_date": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    },
+    "supplier_name": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    },
+    "customer_name": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    },
+    "currency": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    },
+    "subtotal": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    },
+    "tax": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    },
+    "total": {
+     "exact": 2,
+     "normalized": 2,
+     "denominator": 2
+    }
+   },
+   "counts": {
+    "item_fields": 88,
+    "item_exact": 88,
+    "item_normalized": 88,
+    "item_rows": 22,
+    "row_exact": 22,
+    "row_normalized": 22,
+    "assertions": 104,
+    "unsupported": 0
+   },
+   "errors": [],
+   "labeled_review": false,
+   "safety_review": false,
+   "false_accept": false,
+   "labeled_false_accept": false,
+   "reviewed": true
+  }
+ },
+ {
   "id": "test/family-99-long-1000.pdf",
   "family": "test-family-99",
   "format": "pdf",
@@ -8839,9 +10629,9 @@
   "expected_units": 1000,
   "sha256": "67602625c22040e5478bebf7a2c04534593d75ce0a51c1b3b35bb21c313b876c",
   "success": false,
-  "elapsed_seconds": 2773.5433348000006,
+  "elapsed_seconds": 7.691388099978212,
   "expected_invoices": 1000,
-  "error": "ObservationError: gateway_unavailable",
+  "error": "ObservationError: gateway_rate_limited",
   "predicted_invoices": 0,
   "usage": {
    "model_calls": 0,
@@ -80904,451 +82694,6 @@
       "quantity": "1",
       "unit_price": "2.55",
       "line_total": "2.55"
-     },
-     "actual": null
-    }
-   ],
-   "labeled_review": false,
-   "safety_review": true,
-   "false_accept": false,
-   "labeled_false_accept": false,
-   "reviewed": false
-  }
- },
- {
-  "id": "extra/northwind-invoice-pack-4-pages.pdf",
-  "family": "extra",
-  "format": "pdf",
-  "category": "multi_page_pack",
-  "expected_failure": false,
-  "expected_units": null,
-  "sha256": "df52e344a258432fbb07cf880a64cc53c3a4a62f26a7536c1985207ec72b3909",
-  "success": false,
-  "elapsed_seconds": 2.3866857000029995,
-  "expected_invoices": 2,
-  "error": "ObservationError: gateway_unavailable",
-  "predicted_invoices": 0,
-  "usage": {
-   "model_calls": 0,
-   "input_tokens": 0,
-   "output_tokens": 0,
-   "cache": "miss"
-  },
-  "reader": null,
-  "guardrail": null,
-  "review_flags": [],
-  "segmentation": null,
-  "finalization_blocked": null,
-  "predictions": [],
-  "score": {
-   "fields": {
-    "invoice_number": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    },
-    "invoice_date": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    },
-    "supplier_name": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    },
-    "customer_name": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    },
-    "currency": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    },
-    "subtotal": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    },
-    "tax": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    },
-    "total": {
-     "exact": 0,
-     "normalized": 0,
-     "denominator": 2
-    }
-   },
-   "counts": {
-    "item_fields": 88,
-    "item_exact": 0,
-    "item_normalized": 0,
-    "item_rows": 22,
-    "row_exact": 0,
-    "row_normalized": 0
-   },
-   "errors": [
-    {
-     "invoice_index": 0,
-     "field": "invoice_number",
-     "expected": "NW-2026-0417",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "invoice_date",
-     "expected": "14 October 2026",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "supplier_name",
-     "expected": "Northwind Office Supply Ltd.",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "customer_name",
-     "expected": "Contoso Engineering GmbH",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "currency",
-     "expected": "GBP",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "subtotal",
-     "expected": "12802.25",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "tax",
-     "expected": "2560.45",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "total",
-     "expected": "15362.70",
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 0,
-     "expected": {
-      "description": "A4 copy paper, 80gsm (box of 5 reams)",
-      "quantity": "40",
-      "unit_price": "18.50",
-      "line_total": "740.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 1,
-     "expected": {
-      "description": "Black toner cartridge TN-2420",
-      "quantity": "12",
-      "unit_price": "64.90",
-      "line_total": "778.80"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 2,
-     "expected": {
-      "description": "Ergonomic office chair, mesh back",
-      "quantity": "6",
-      "unit_price": "189.00",
-      "line_total": "1134.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 3,
-     "expected": {
-      "description": "Height-adjustable desk 160x80",
-      "quantity": "4",
-      "unit_price": "412.00",
-      "line_total": "1648.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 4,
-     "expected": {
-      "description": "Whiteboard markers, assorted (pack of 12)",
-      "quantity": "25",
-      "unit_price": "9.75",
-      "line_total": "243.75"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 5,
-     "expected": {
-      "description": "Lever arch files A4 (pack of 10)",
-      "quantity": "30",
-      "unit_price": "14.20",
-      "line_total": "426.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 6,
-     "expected": {
-      "description": "Wireless keyboard and mouse set",
-      "quantity": "15",
-      "unit_price": "38.40",
-      "line_total": "576.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 7,
-     "expected": {
-      "description": "27-inch IPS monitor",
-      "quantity": "8",
-      "unit_price": "229.00",
-      "line_total": "1832.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 8,
-     "expected": {
-      "description": "USB-C docking station",
-      "quantity": "8",
-      "unit_price": "119.50",
-      "line_total": "956.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 9,
-     "expected": {
-      "description": "Desk organiser, bamboo",
-      "quantity": "20",
-      "unit_price": "16.80",
-      "line_total": "336.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 10,
-     "expected": {
-      "description": "Shredder, cross-cut, 20 sheets",
-      "quantity": "2",
-      "unit_price": "245.00",
-      "line_total": "490.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 11,
-     "expected": {
-      "description": "Laminating pouches A4 (pack of 100)",
-      "quantity": "10",
-      "unit_price": "12.60",
-      "line_total": "126.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 12,
-     "expected": {
-      "description": "Coffee capsules (box of 100)",
-      "quantity": "18",
-      "unit_price": "32.00",
-      "line_total": "576.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 13,
-     "expected": {
-      "description": "First aid kit, workplace 25 persons",
-      "quantity": "3",
-      "unit_price": "54.30",
-      "line_total": "162.90"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 14,
-     "expected": {
-      "description": "Cable management tray",
-      "quantity": "12",
-      "unit_price": "21.90",
-      "line_total": "262.80"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 15,
-     "expected": {
-      "description": "Noise-cancelling headset",
-      "quantity": "10",
-      "unit_price": "89.00",
-      "line_total": "890.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 16,
-     "expected": {
-      "description": "Desk lamp LED, dimmable",
-      "quantity": "10",
-      "unit_price": "34.50",
-      "line_total": "345.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 17,
-     "expected": {
-      "description": "Archive storage boxes (pack of 10)",
-      "quantity": "15",
-      "unit_price": "27.40",
-      "line_total": "411.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 18,
-     "expected": {
-      "description": "Sticky notes 76x76 (pack of 24)",
-      "quantity": "20",
-      "unit_price": "11.90",
-      "line_total": "238.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 0,
-     "field": "line_items",
-     "row": 19,
-     "expected": {
-      "description": "Installation and assembly service (hours)",
-      "quantity": "14",
-      "unit_price": "45.00",
-      "line_total": "630.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "invoice_number",
-     "expected": "NW-2026-0418",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "invoice_date",
-     "expected": "21 October 2026",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "supplier_name",
-     "expected": "Northwind Office Supply Ltd.",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "customer_name",
-     "expected": "Contoso Engineering GmbH",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "currency",
-     "expected": "GBP",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "subtotal",
-     "expected": "770.00",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "tax",
-     "expected": "154.00",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "total",
-     "expected": "924.00",
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "line_items",
-     "row": 0,
-     "expected": {
-      "description": "Printer servicing, annual contract",
-      "quantity": "1",
-      "unit_price": "480.00",
-      "line_total": "480.00"
-     },
-     "actual": null
-    },
-    {
-     "invoice_index": 1,
-     "field": "line_items",
-     "row": 1,
-     "expected": {
-      "description": "Replacement drum unit DR-2400",
-      "quantity": "4",
-      "unit_price": "72.50",
-      "line_total": "290.00"
      },
      "actual": null
     }

@@ -82,7 +82,7 @@ def _pages(path):
         return document.page_count
 
 
-OUTAGE = ("unavailable", "connection_failed")
+OUTAGE = ("unavailable", "connection_failed", "rate_limited")
 
 
 def outage(record):

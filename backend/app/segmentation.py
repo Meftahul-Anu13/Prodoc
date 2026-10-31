@@ -87,7 +87,9 @@ def batches(bundle, plan):
         return [{"segments": [0], "pages": plan["segments"][0]["pages"]}]
     pages = pages_of(bundle)
     budget = _int_env("BATCH_MAX_CHARS", 24_000)
-    limit = _int_env("BATCH_MAX_INVOICES", 12)
+    # Output time grows with the invoice count: 12 invoices took 316 s to extract on the
+    # gateway, over its 280 s limit. Six stays well inside it.
+    limit = _int_env("BATCH_MAX_INVOICES", 6)
     result, current, size = [], [], 0
     for index, segment in enumerate(plan["segments"]):
         chars = sum(len(b["text"]) for page in segment["pages"] for b in pages[page])

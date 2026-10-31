@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-30T00:38:15.552192+00:00",
+  "timestamp_utc": "2026-10-31T15:26:19.706205+00:00",
   "split": "test",
   "synthetic_only": true,
   "provider": "gateway",
@@ -10,7 +10,7 @@
     "platform": "Windows-11-10.0.26300-SP0"
   },
   "manifest_sha256": "2d369124fecae72214553e66e4f47ff1e457269535a3ccac242701dbfb619be6",
-  "wall_seconds_including_harness": 0.3983771999992314,
+  "wall_seconds_including_harness": 7.874030600010883,
   "definitions": {
     "success": "Valid-document success means direct process_file returned a schema-shaped result with at least one invoice, no page errors and no failed/partial metadata status, not extraction correctness or job completion. Failures, including missing OCR and partial-page errors, stay in all valid denominators and receive no extraction credit. Known-corrupt cases are separate.",
     "accuracy": "Eight scalar fields scored on all expected invoice slots, including explicit nulls; unmatched extra predicted invoices add incorrect slots. Failed/missing invoices get zero correct, even for null labels. Exact compares JSON representations; normalized uses NFKC, whitespace/case, common dates and Decimal for numeric fields. No fuzzy credit.",
@@ -23,189 +23,189 @@
     "pipeline": "AI pipeline: success means process_document returned at least one invoice without page errors. Every AI invoice carries needs_review=true by design, so false-accept rates are 0 by construction, not by detection quality."
   },
   "usage": {
-    "model_calls": 54,
-    "input_tokens": 133166,
-    "output_tokens": 42249,
+    "model_calls": 56,
+    "input_tokens": 143118,
+    "output_tokens": 49790,
     "cached_documents": 2
   },
   "summary": {
-    "valid_documents": 27,
-    "expected_invoices": 31,
+    "valid_documents": 28,
+    "expected_invoices": 33,
     "success": {
-      "numerator": 27,
-      "denominator": 27,
+      "numerator": 28,
+      "denominator": 28,
       "rate": 1.0,
       "wilson95": [
-        0.8754449702581328,
+        0.8793566952341543,
         0.9999999999999998
       ]
     },
     "failure": {
       "numerator": 0,
-      "denominator": 27,
+      "denominator": 28,
       "rate": 0.0,
       "wilson95": [
-        0,
-        0.12455502974186705
+        1.3877787807814457e-17,
+        0.12064330476584563
       ]
     },
     "fields": {
       "invoice_number": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "invoice_date": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "supplier_name": {
         "exact": {
-          "numerator": 30,
-          "denominator": 31,
-          "rate": 0.967741935483871,
+          "numerator": 32,
+          "denominator": 33,
+          "rate": 0.9696969696969697,
           "wilson95": [
-            0.838058948352751,
-            0.9942827784745831
+            0.846812746178811,
+            0.9946305894631283
           ]
         },
         "normalized": {
-          "numerator": 30,
-          "denominator": 31,
-          "rate": 0.967741935483871,
+          "numerator": 32,
+          "denominator": 33,
+          "rate": 0.9696969696969697,
           "wilson95": [
-            0.838058948352751,
-            0.9942827784745831
+            0.846812746178811,
+            0.9946305894631283
           ]
         }
       },
       "customer_name": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "currency": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "subtotal": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "tax": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "total": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
@@ -213,81 +213,81 @@
     },
     "all_scalar_fields": {
       "exact": {
-        "numerator": 247,
-        "denominator": 248,
-        "rate": 0.9959677419354839,
+        "numerator": 263,
+        "denominator": 264,
+        "rate": 0.9962121212121212,
         "wilson95": [
-          0.977517162689225,
-          0.9992878524657536
+          0.9788595768967978,
+          0.9993310331513472
         ]
       },
       "normalized": {
-        "numerator": 247,
-        "denominator": 248,
-        "rate": 0.9959677419354839,
+        "numerator": 263,
+        "denominator": 264,
+        "rate": 0.9962121212121212,
         "wilson95": [
-          0.977517162689225,
-          0.9992878524657536
+          0.9788595768967978,
+          0.9993310331513472
         ]
       }
     },
     "document_macro_scalar_accuracy": {
       "exact": {
-        "mean_document_accuracy": 0.9953703703703703,
-        "documents": 27,
+        "mean_document_accuracy": 0.9955357142857143,
+        "documents": 28,
         "confidence_interval": null
       },
       "normalized": {
-        "mean_document_accuracy": 0.9953703703703703,
-        "documents": 27,
+        "mean_document_accuracy": 0.9955357142857143,
+        "documents": 28,
         "confidence_interval": null
       }
     },
     "line_items": {
       "field_exact": {
-        "numerator": 246,
-        "denominator": 248,
-        "rate": 0.9919354838709677,
+        "numerator": 334,
+        "denominator": 336,
+        "rate": 0.9940476190476191,
         "wilson95": [
-          0.9710778853059633,
-          0.9977856256607635
+          0.9785600046939111,
+          0.9983661218360735
         ]
       },
       "field_normalized": {
-        "numerator": 246,
-        "denominator": 248,
-        "rate": 0.9919354838709677,
+        "numerator": 334,
+        "denominator": 336,
+        "rate": 0.9940476190476191,
         "wilson95": [
-          0.9710778853059633,
-          0.9977856256607635
+          0.9785600046939111,
+          0.9983661218360735
         ]
       },
       "row_exact": {
-        "numerator": 61,
-        "denominator": 62,
-        "rate": 0.9838709677419355,
+        "numerator": 83,
+        "denominator": 84,
+        "rate": 0.9880952380952381,
         "wilson95": [
-          0.9141327973931,
-          0.9971471328313782
+          0.935604562492286,
+          0.9978954169124508
         ]
       },
       "row_normalized": {
-        "numerator": 61,
-        "denominator": 62,
-        "rate": 0.9838709677419355,
+        "numerator": 83,
+        "denominator": 84,
+        "rate": 0.9880952380952381,
         "wilson95": [
-          0.9141327973931,
-          0.9971471328313782
+          0.935604562492286,
+          0.9978954169124508
         ]
       }
     },
     "ungrounded_value_proxy": {
       "numerator": 1,
-      "denominator": 487,
-      "rate": 0.002053388090349076,
+      "denominator": 591,
+      "rate": 0.001692047377326565,
       "wilson95": [
-        0.00036256542684076024,
-        0.011538342118192081
+        0.00029875037992493827,
+        0.009521444117404045
       ]
     },
     "false_accept_review": {
@@ -309,11 +309,11 @@
       ]
     },
     "manual_review": {
-      "numerator": 27,
-      "denominator": 27,
+      "numerator": 28,
+      "denominator": 28,
       "rate": 1.0,
       "wilson95": [
-        0.8754449702581328,
+        0.8793566952341543,
         0.9999999999999998
       ]
     },
@@ -331,195 +331,195 @@
       "unexpected_accepts": []
     },
     "latency_seconds_valid_all_attempts": {
-      "p50": 49.35738919999858,
-      "p95": 87.43467910999824,
-      "sum": 1381.4731979999924
+      "p50": 50.537652249997336,
+      "p95": 93.09103938499938,
+      "sum": 1615.0071081999922
     },
     "sequential_throughput": {
-      "attempted_documents_per_second": 0.019544353114551084,
-      "successful_documents_per_second": 0.019544353114551084,
-      "expected_units_per_second": 0.02243981283522532,
+      "attempted_documents_per_second": 0.017337384992198224,
+      "successful_documents_per_second": 0.017337384992198224,
+      "expected_units_per_second": 0.02167173124024778,
       "label": "Single-process sequential direct pipeline calls; no queue/API/concurrent load benchmark. Units are pages/sheets, not CSV rows."
     }
   },
   "without_long_pdf": {
-    "valid_documents": 27,
-    "expected_invoices": 31,
+    "valid_documents": 28,
+    "expected_invoices": 33,
     "success": {
-      "numerator": 27,
-      "denominator": 27,
+      "numerator": 28,
+      "denominator": 28,
       "rate": 1.0,
       "wilson95": [
-        0.8754449702581328,
+        0.8793566952341543,
         0.9999999999999998
       ]
     },
     "failure": {
       "numerator": 0,
-      "denominator": 27,
+      "denominator": 28,
       "rate": 0.0,
       "wilson95": [
-        0,
-        0.12455502974186705
+        1.3877787807814457e-17,
+        0.12064330476584563
       ]
     },
     "fields": {
       "invoice_number": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "invoice_date": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "supplier_name": {
         "exact": {
-          "numerator": 30,
-          "denominator": 31,
-          "rate": 0.967741935483871,
+          "numerator": 32,
+          "denominator": 33,
+          "rate": 0.9696969696969697,
           "wilson95": [
-            0.838058948352751,
-            0.9942827784745831
+            0.846812746178811,
+            0.9946305894631283
           ]
         },
         "normalized": {
-          "numerator": 30,
-          "denominator": 31,
-          "rate": 0.967741935483871,
+          "numerator": 32,
+          "denominator": 33,
+          "rate": 0.9696969696969697,
           "wilson95": [
-            0.838058948352751,
-            0.9942827784745831
+            0.846812746178811,
+            0.9946305894631283
           ]
         }
       },
       "customer_name": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "currency": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "subtotal": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "tax": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
       },
       "total": {
         "exact": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         },
         "normalized": {
-          "numerator": 31,
-          "denominator": 31,
+          "numerator": 33,
+          "denominator": 33,
           "rate": 1.0,
           "wilson95": [
-            0.889744604539564,
+            0.895730002457548,
             1
           ]
         }
@@ -527,81 +527,81 @@
     },
     "all_scalar_fields": {
       "exact": {
-        "numerator": 247,
-        "denominator": 248,
-        "rate": 0.9959677419354839,
+        "numerator": 263,
+        "denominator": 264,
+        "rate": 0.9962121212121212,
         "wilson95": [
-          0.977517162689225,
-          0.9992878524657536
+          0.9788595768967978,
+          0.9993310331513472
         ]
       },
       "normalized": {
-        "numerator": 247,
-        "denominator": 248,
-        "rate": 0.9959677419354839,
+        "numerator": 263,
+        "denominator": 264,
+        "rate": 0.9962121212121212,
         "wilson95": [
-          0.977517162689225,
-          0.9992878524657536
+          0.9788595768967978,
+          0.9993310331513472
         ]
       }
     },
     "document_macro_scalar_accuracy": {
       "exact": {
-        "mean_document_accuracy": 0.9953703703703703,
-        "documents": 27,
+        "mean_document_accuracy": 0.9955357142857143,
+        "documents": 28,
         "confidence_interval": null
       },
       "normalized": {
-        "mean_document_accuracy": 0.9953703703703703,
-        "documents": 27,
+        "mean_document_accuracy": 0.9955357142857143,
+        "documents": 28,
         "confidence_interval": null
       }
     },
     "line_items": {
       "field_exact": {
-        "numerator": 246,
-        "denominator": 248,
-        "rate": 0.9919354838709677,
+        "numerator": 334,
+        "denominator": 336,
+        "rate": 0.9940476190476191,
         "wilson95": [
-          0.9710778853059633,
-          0.9977856256607635
+          0.9785600046939111,
+          0.9983661218360735
         ]
       },
       "field_normalized": {
-        "numerator": 246,
-        "denominator": 248,
-        "rate": 0.9919354838709677,
+        "numerator": 334,
+        "denominator": 336,
+        "rate": 0.9940476190476191,
         "wilson95": [
-          0.9710778853059633,
-          0.9977856256607635
+          0.9785600046939111,
+          0.9983661218360735
         ]
       },
       "row_exact": {
-        "numerator": 61,
-        "denominator": 62,
-        "rate": 0.9838709677419355,
+        "numerator": 83,
+        "denominator": 84,
+        "rate": 0.9880952380952381,
         "wilson95": [
-          0.9141327973931,
-          0.9971471328313782
+          0.935604562492286,
+          0.9978954169124508
         ]
       },
       "row_normalized": {
-        "numerator": 61,
-        "denominator": 62,
-        "rate": 0.9838709677419355,
+        "numerator": 83,
+        "denominator": 84,
+        "rate": 0.9880952380952381,
         "wilson95": [
-          0.9141327973931,
-          0.9971471328313782
+          0.935604562492286,
+          0.9978954169124508
         ]
       }
     },
     "ungrounded_value_proxy": {
       "numerator": 1,
-      "denominator": 487,
-      "rate": 0.002053388090349076,
+      "denominator": 591,
+      "rate": 0.001692047377326565,
       "wilson95": [
-        0.00036256542684076024,
-        0.011538342118192081
+        0.00029875037992493827,
+        0.009521444117404045
       ]
     },
     "false_accept_review": {
@@ -623,11 +623,11 @@
       ]
     },
     "manual_review": {
-      "numerator": 27,
-      "denominator": 27,
+      "numerator": 28,
+      "denominator": 28,
       "rate": 1.0,
       "wilson95": [
-        0.8754449702581328,
+        0.8793566952341543,
         0.9999999999999998
       ]
     },
@@ -645,14 +645,14 @@
       "unexpected_accepts": []
     },
     "latency_seconds_valid_all_attempts": {
-      "p50": 49.35738919999858,
-      "p95": 87.43467910999824,
-      "sum": 1381.4731979999924
+      "p50": 50.537652249997336,
+      "p95": 93.09103938499938,
+      "sum": 1615.0071081999922
     },
     "sequential_throughput": {
-      "attempted_documents_per_second": 0.019544353114551084,
-      "successful_documents_per_second": 0.019544353114551084,
-      "expected_units_per_second": 0.02243981283522532,
+      "attempted_documents_per_second": 0.017337384992198224,
+      "successful_documents_per_second": 0.017337384992198224,
+      "expected_units_per_second": 0.02167173124024778,
       "label": "Single-process sequential direct pipeline calls; no queue/API/concurrent load benchmark. Units are pages/sheets, not CSV rows."
     }
   },
@@ -1286,183 +1286,183 @@
       }
     },
     "pdf": {
-      "valid_documents": 5,
-      "expected_invoices": 6,
+      "valid_documents": 6,
+      "expected_invoices": 8,
       "success": {
-        "numerator": 5,
-        "denominator": 5,
+        "numerator": 6,
+        "denominator": 6,
         "rate": 1.0,
         "wilson95": [
-          0.5655175352168251,
+          0.6096657120978346,
           1
         ]
       },
       "failure": {
         "numerator": 0,
-        "denominator": 5,
+        "denominator": 6,
         "rate": 0.0,
         "wilson95": [
-          0,
-          0.43448246478317476
+          2.7755575615628914e-17,
+          0.3903342879021653
         ]
       },
       "fields": {
         "invoice_number": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
         },
         "invoice_date": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
         },
         "supplier_name": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
         },
         "customer_name": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
         },
         "currency": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
         },
         "subtotal": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
         },
         "tax": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
         },
         "total": {
           "exact": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           },
           "normalized": {
-            "numerator": 6,
-            "denominator": 6,
+            "numerator": 8,
+            "denominator": 8,
             "rate": 1.0,
             "wilson95": [
-              0.6096657120978346,
+              0.6755924351161198,
               1
             ]
           }
@@ -1470,81 +1470,81 @@
       },
       "all_scalar_fields": {
         "exact": {
-          "numerator": 48,
-          "denominator": 48,
+          "numerator": 64,
+          "denominator": 64,
           "rate": 1.0,
           "wilson95": [
-            0.9258998703338824,
-            0.9999999999999999
+            0.9433759402071946,
+            1
           ]
         },
         "normalized": {
-          "numerator": 48,
-          "denominator": 48,
+          "numerator": 64,
+          "denominator": 64,
           "rate": 1.0,
           "wilson95": [
-            0.9258998703338824,
-            0.9999999999999999
+            0.9433759402071946,
+            1
           ]
         }
       },
       "document_macro_scalar_accuracy": {
         "exact": {
           "mean_document_accuracy": 1.0,
-          "documents": 5,
+          "documents": 6,
           "confidence_interval": null
         },
         "normalized": {
           "mean_document_accuracy": 1.0,
-          "documents": 5,
+          "documents": 6,
           "confidence_interval": null
         }
       },
       "line_items": {
         "field_exact": {
-          "numerator": 48,
-          "denominator": 48,
+          "numerator": 136,
+          "denominator": 136,
           "rate": 1.0,
           "wilson95": [
-            0.9258998703338824,
-            0.9999999999999999
+            0.9725299002664176,
+            1
           ]
         },
         "field_normalized": {
-          "numerator": 48,
-          "denominator": 48,
+          "numerator": 136,
+          "denominator": 136,
           "rate": 1.0,
           "wilson95": [
-            0.9258998703338824,
-            0.9999999999999999
+            0.9725299002664176,
+            1
           ]
         },
         "row_exact": {
-          "numerator": 12,
-          "denominator": 12,
+          "numerator": 34,
+          "denominator": 34,
           "rate": 1.0,
           "wilson95": [
-            0.7575059933447592,
-            1
+            0.8984854458466761,
+            0.9999999999999999
           ]
         },
         "row_normalized": {
-          "numerator": 12,
-          "denominator": 12,
+          "numerator": 34,
+          "denominator": 34,
           "rate": 1.0,
           "wilson95": [
-            0.7575059933447592,
-            1
+            0.8984854458466761,
+            0.9999999999999999
           ]
         }
       },
       "ungrounded_value_proxy": {
         "numerator": 0,
-        "denominator": 95,
+        "denominator": 199,
         "rate": 0.0,
         "wilson95": [
           0,
-          0.038864853539472964
+          0.018938233056634942
         ]
       },
       "false_accept_review": {
@@ -1566,11 +1566,11 @@
         ]
       },
       "manual_review": {
-        "numerator": 5,
-        "denominator": 5,
+        "numerator": 6,
+        "denominator": 6,
         "rate": 1.0,
         "wilson95": [
-          0.5655175352168251,
+          0.6096657120978346,
           1
         ]
       },
@@ -1588,14 +1588,14 @@
         "unexpected_accepts": []
       },
       "latency_seconds_valid_all_attempts": {
-        "p50": 45.04117650000262,
-        "p95": 72.37676326000073,
-        "sum": 216.245780199999
+        "p50": 46.56994500000292,
+        "p95": 194.76200157499989,
+        "sum": 449.7796903999988
       },
       "sequential_throughput": {
-        "attempted_documents_per_second": 0.023121838471833557,
-        "successful_documents_per_second": 0.023121838471833557,
-        "expected_units_per_second": 0.027746206166200268,
+        "attempted_documents_per_second": 0.01333986422255765,
+        "successful_documents_per_second": 0.01333986422255765,
+        "expected_units_per_second": 0.02223310703759608,
         "label": "Single-process sequential direct pipeline calls; no queue/API/concurrent load benchmark. Units are pages/sheets, not CSV rows."
       }
     },
@@ -4008,6 +4008,311 @@
         "label": "Single-process sequential direct pipeline calls; no queue/API/concurrent load benchmark. Units are pages/sheets, not CSV rows."
       }
     },
+    "multi_page_pack": {
+      "valid_documents": 1,
+      "expected_invoices": 2,
+      "success": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.20654931437723745,
+          1
+        ]
+      },
+      "failure": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.7934506856227626
+        ]
+      },
+      "fields": {
+        "invoice_number": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        },
+        "invoice_date": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        },
+        "supplier_name": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        },
+        "customer_name": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        },
+        "currency": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        },
+        "subtotal": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        },
+        "tax": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        },
+        "total": {
+          "exact": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          },
+          "normalized": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1.0,
+            "wilson95": [
+              0.34238022750665303,
+              1
+            ]
+          }
+        }
+      },
+      "all_scalar_fields": {
+        "exact": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 1.0,
+          "wilson95": [
+            0.8063923194655637,
+            1
+          ]
+        },
+        "normalized": {
+          "numerator": 16,
+          "denominator": 16,
+          "rate": 1.0,
+          "wilson95": [
+            0.8063923194655637,
+            1
+          ]
+        }
+      },
+      "document_macro_scalar_accuracy": {
+        "exact": {
+          "mean_document_accuracy": 1.0,
+          "documents": 1,
+          "confidence_interval": null
+        },
+        "normalized": {
+          "mean_document_accuracy": 1.0,
+          "documents": 1,
+          "confidence_interval": null
+        }
+      },
+      "line_items": {
+        "field_exact": {
+          "numerator": 88,
+          "denominator": 88,
+          "rate": 1.0,
+          "wilson95": [
+            0.9581729333351078,
+            0.9999999999999999
+          ]
+        },
+        "field_normalized": {
+          "numerator": 88,
+          "denominator": 88,
+          "rate": 1.0,
+          "wilson95": [
+            0.9581729333351078,
+            0.9999999999999999
+          ]
+        },
+        "row_exact": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0,
+          "wilson95": [
+            0.8513451253913791,
+            1
+          ]
+        },
+        "row_normalized": {
+          "numerator": 22,
+          "denominator": 22,
+          "rate": 1.0,
+          "wilson95": [
+            0.8513451253913791,
+            1
+          ]
+        }
+      },
+      "ungrounded_value_proxy": {
+        "numerator": 0,
+        "denominator": 104,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.03562135437245191
+        ]
+      },
+      "false_accept_review": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson95": null
+      },
+      "false_accept_labeled_review": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "wilson95": null
+      },
+      "manual_review": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "wilson95": [
+          0.20654931437723745,
+          1
+        ]
+      },
+      "known_corrupt": {
+        "documents": 0,
+        "correct_rejection": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null,
+          "wilson95": null
+        },
+        "unexpected_accepts": []
+      },
+      "latency_seconds_valid_all_attempts": {
+        "p50": 233.5339101999998,
+        "p95": 233.5339101999998,
+        "sum": 233.5339101999998
+      },
+      "sequential_throughput": {
+        "attempted_documents_per_second": 0.004282033384974345,
+        "successful_documents_per_second": 0.004282033384974345,
+        "expected_units_per_second": 0.01712813353989738,
+        "label": "Single-process sequential direct pipeline calls; no queue/API/concurrent load benchmark. Units are pages/sheets, not CSV rows."
+      }
+    },
     "poor_scan": {
       "valid_documents": 1,
       "expected_invoices": 1,
@@ -4933,7 +5238,9 @@
       }
     }
   },
-  "not_evaluated_provider_outage": [],
+  "not_evaluated_provider_outage": [
+    "test/family-99-long-1000.pdf"
+  ],
   "documents": [
     {
       "id": "test/family-0-clean.pdf",
@@ -13765,6 +14072,1796 @@
       "segmentation": null,
       "finalization_blocked": null,
       "predictions": []
+    },
+    {
+      "id": "extra/northwind-invoice-pack-4-pages.pdf",
+      "family": "extra",
+      "format": "pdf",
+      "category": "multi_page_pack",
+      "expected_failure": false,
+      "expected_units": 4,
+      "sha256": "df52e344a258432fbb07cf880a64cc53c3a4a62f26a7536c1985207ec72b3909",
+      "success": true,
+      "elapsed_seconds": 233.5339101999998,
+      "expected_invoices": 2,
+      "error": null,
+      "predicted_invoices": 2,
+      "usage": {
+        "model_calls": 2,
+        "input_tokens": 9952,
+        "output_tokens": 7541,
+        "cache": "miss"
+      },
+      "reader": "pymupdf-text-layer",
+      "guardrail": "financial",
+      "review_flags": [],
+      "segmentation": {
+        "mode": "single",
+        "segments": 1,
+        "requests": 1,
+        "skipped_pages": []
+      },
+      "finalization_blocked": false,
+      "predictions": [
+        {
+          "line_items": [
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000012",
+                  "region_id": "r3",
+                  "source_text": "A4 copy paper, 80gsm (box of 5 reams)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000012",
+                  "region_id": "r3",
+                  "source_text": "A4 copy paper, 80gsm (box of 5 reams) | 40 | 18.50 | 740.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000012",
+                  "region_id": "r3",
+                  "source_text": "A4 copy paper, 80gsm (box of 5 reams) | 40 | 18.50 | 740.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000012",
+                  "region_id": "r3",
+                  "source_text": "A4 copy paper, 80gsm (box of 5 reams) | 40 | 18.50 | 740.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "A4 copy paper, 80gsm (box of 5 reams)",
+              "quantity": "40",
+              "unit_price": "18.50",
+              "discount": null,
+              "tax": null,
+              "line_total": "740.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000013",
+                  "region_id": "r3",
+                  "source_text": "Black toner cartridge TN-2420",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000013",
+                  "region_id": "r3",
+                  "source_text": "Black toner cartridge TN-2420 | 12 | 64.90 | 778.80",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000013",
+                  "region_id": "r3",
+                  "source_text": "Black toner cartridge TN-2420 | 12 | 64.90 | 778.80",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000013",
+                  "region_id": "r3",
+                  "source_text": "Black toner cartridge TN-2420 | 12 | 64.90 | 778.80",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Black toner cartridge TN-2420",
+              "quantity": "12",
+              "unit_price": "64.90",
+              "discount": null,
+              "tax": null,
+              "line_total": "778.80"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 14,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000014",
+                  "region_id": "r3",
+                  "source_text": "Ergonomic office chair, mesh back",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 14,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000014",
+                  "region_id": "r3",
+                  "source_text": "Ergonomic office chair, mesh back | 6 | 189.00 | 1,134.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 14,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000014",
+                  "region_id": "r3",
+                  "source_text": "Ergonomic office chair, mesh back | 6 | 189.00 | 1,134.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 14,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000014",
+                  "region_id": "r3",
+                  "source_text": "Ergonomic office chair, mesh back | 6 | 189.00 | 1,134.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Ergonomic office chair, mesh back",
+              "quantity": "6",
+              "unit_price": "189.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "1134.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 15,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000015",
+                  "region_id": "r3",
+                  "source_text": "Height-adjustable desk 160x80",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 15,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000015",
+                  "region_id": "r3",
+                  "source_text": "Height-adjustable desk 160x80 | 4 | 412.00 | 1,648.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 15,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000015",
+                  "region_id": "r3",
+                  "source_text": "Height-adjustable desk 160x80 | 4 | 412.00 | 1,648.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 15,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000015",
+                  "region_id": "r3",
+                  "source_text": "Height-adjustable desk 160x80 | 4 | 412.00 | 1,648.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Height-adjustable desk 160x80",
+              "quantity": "4",
+              "unit_price": "412.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "1648.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 16,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000016",
+                  "region_id": "r3",
+                  "source_text": "Whiteboard markers, assorted (pack of 12)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 16,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000016",
+                  "region_id": "r3",
+                  "source_text": "Whiteboard markers, assorted (pack of 12) | 25 | 9.75 | 243.75",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 16,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000016",
+                  "region_id": "r3",
+                  "source_text": "Whiteboard markers, assorted (pack of 12) | 25 | 9.75 | 243.75",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 16,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000016",
+                  "region_id": "r3",
+                  "source_text": "Whiteboard markers, assorted (pack of 12) | 25 | 9.75 | 243.75",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Whiteboard markers, assorted (pack of 12)",
+              "quantity": "25",
+              "unit_price": "9.75",
+              "discount": null,
+              "tax": null,
+              "line_total": "243.75"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 17,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000017",
+                  "region_id": "r3",
+                  "source_text": "Lever arch files A4 (pack of 10)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 17,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000017",
+                  "region_id": "r3",
+                  "source_text": "Lever arch files A4 (pack of 10) | 30 | 14.20 | 426.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 17,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000017",
+                  "region_id": "r3",
+                  "source_text": "Lever arch files A4 (pack of 10) | 30 | 14.20 | 426.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 17,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000017",
+                  "region_id": "r3",
+                  "source_text": "Lever arch files A4 (pack of 10) | 30 | 14.20 | 426.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Lever arch files A4 (pack of 10)",
+              "quantity": "30",
+              "unit_price": "14.20",
+              "discount": null,
+              "tax": null,
+              "line_total": "426.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 18,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000018",
+                  "region_id": "r3",
+                  "source_text": "Wireless keyboard and mouse set",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 18,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000018",
+                  "region_id": "r3",
+                  "source_text": "Wireless keyboard and mouse set | 15 | 38.40 | 576.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 18,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000018",
+                  "region_id": "r3",
+                  "source_text": "Wireless keyboard and mouse set | 15 | 38.40 | 576.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 18,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000018",
+                  "region_id": "r3",
+                  "source_text": "Wireless keyboard and mouse set | 15 | 38.40 | 576.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Wireless keyboard and mouse set",
+              "quantity": "15",
+              "unit_price": "38.40",
+              "discount": null,
+              "tax": null,
+              "line_total": "576.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 19,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000019",
+                  "region_id": "r3",
+                  "source_text": "27-inch IPS monitor",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 19,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000019",
+                  "region_id": "r3",
+                  "source_text": "27-inch IPS monitor | 8 | 229.00 | 1,832.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 19,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000019",
+                  "region_id": "r3",
+                  "source_text": "27-inch IPS monitor | 8 | 229.00 | 1,832.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 19,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000019",
+                  "region_id": "r3",
+                  "source_text": "27-inch IPS monitor | 8 | 229.00 | 1,832.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "27-inch IPS monitor",
+              "quantity": "8",
+              "unit_price": "229.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "1832.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 1,
+                  "line": 20,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000020",
+                  "region_id": "r3",
+                  "source_text": "USB-C docking station",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 1,
+                  "line": 20,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000020",
+                  "region_id": "r3",
+                  "source_text": "USB-C docking station | 8 | 119.50 | 956.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 1,
+                  "line": 20,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000020",
+                  "region_id": "r3",
+                  "source_text": "USB-C docking station | 8 | 119.50 | 956.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 1,
+                  "line": 20,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000020",
+                  "region_id": "r3",
+                  "source_text": "USB-C docking station | 8 | 119.50 | 956.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "USB-C docking station",
+              "quantity": "8",
+              "unit_price": "119.50",
+              "discount": null,
+              "tax": null,
+              "line_total": "956.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000025",
+                  "region_id": "r5",
+                  "source_text": "Desk organiser, bamboo",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000025",
+                  "region_id": "r5",
+                  "source_text": "Desk organiser, bamboo | 20 | 16.80 | 336.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000025",
+                  "region_id": "r5",
+                  "source_text": "Desk organiser, bamboo | 20 | 16.80 | 336.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000025",
+                  "region_id": "r5",
+                  "source_text": "Desk organiser, bamboo | 20 | 16.80 | 336.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Desk organiser, bamboo",
+              "quantity": "20",
+              "unit_price": "16.80",
+              "discount": null,
+              "tax": null,
+              "line_total": "336.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000026",
+                  "region_id": "r5",
+                  "source_text": "Shredder, cross-cut, 20 sheets",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000026",
+                  "region_id": "r5",
+                  "source_text": "Shredder, cross-cut, 20 sheets | 2 | 245.00 | 490.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000026",
+                  "region_id": "r5",
+                  "source_text": "Shredder, cross-cut, 20 sheets | 2 | 245.00 | 490.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000026",
+                  "region_id": "r5",
+                  "source_text": "Shredder, cross-cut, 20 sheets | 2 | 245.00 | 490.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Shredder, cross-cut, 20 sheets",
+              "quantity": "2",
+              "unit_price": "245.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "490.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 5,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000027",
+                  "region_id": "r5",
+                  "source_text": "Laminating pouches A4 (pack of 100)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 5,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000027",
+                  "region_id": "r5",
+                  "source_text": "Laminating pouches A4 (pack of 100) | 10 | 12.60 | 126.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 5,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000027",
+                  "region_id": "r5",
+                  "source_text": "Laminating pouches A4 (pack of 100) | 10 | 12.60 | 126.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 5,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000027",
+                  "region_id": "r5",
+                  "source_text": "Laminating pouches A4 (pack of 100) | 10 | 12.60 | 126.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Laminating pouches A4 (pack of 100)",
+              "quantity": "10",
+              "unit_price": "12.60",
+              "discount": null,
+              "tax": null,
+              "line_total": "126.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 6,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000028",
+                  "region_id": "r5",
+                  "source_text": "Coffee capsules (box of 100)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 6,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000028",
+                  "region_id": "r5",
+                  "source_text": "Coffee capsules (box of 100) | 18 | 32.00 | 576.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 6,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000028",
+                  "region_id": "r5",
+                  "source_text": "Coffee capsules (box of 100) | 18 | 32.00 | 576.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 6,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000028",
+                  "region_id": "r5",
+                  "source_text": "Coffee capsules (box of 100) | 18 | 32.00 | 576.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Coffee capsules (box of 100)",
+              "quantity": "18",
+              "unit_price": "32.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "576.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 7,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000029",
+                  "region_id": "r5",
+                  "source_text": "First aid kit, workplace 25 persons",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 7,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000029",
+                  "region_id": "r5",
+                  "source_text": "First aid kit, workplace 25 persons | 3 | 54.30 | 162.90",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 7,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000029",
+                  "region_id": "r5",
+                  "source_text": "First aid kit, workplace 25 persons | 3 | 54.30 | 162.90",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 7,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000029",
+                  "region_id": "r5",
+                  "source_text": "First aid kit, workplace 25 persons | 3 | 54.30 | 162.90",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "First aid kit, workplace 25 persons",
+              "quantity": "3",
+              "unit_price": "54.30",
+              "discount": null,
+              "tax": null,
+              "line_total": "162.90"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 8,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000030",
+                  "region_id": "r5",
+                  "source_text": "Cable management tray",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 8,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000030",
+                  "region_id": "r5",
+                  "source_text": "Cable management tray | 12 | 21.90 | 262.80",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 8,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000030",
+                  "region_id": "r5",
+                  "source_text": "Cable management tray | 12 | 21.90 | 262.80",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 8,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000030",
+                  "region_id": "r5",
+                  "source_text": "Cable management tray | 12 | 21.90 | 262.80",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Cable management tray",
+              "quantity": "12",
+              "unit_price": "21.90",
+              "discount": null,
+              "tax": null,
+              "line_total": "262.80"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 9,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000031",
+                  "region_id": "r5",
+                  "source_text": "Noise-cancelling headset",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 9,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000031",
+                  "region_id": "r5",
+                  "source_text": "Noise-cancelling headset | 10 | 89.00 | 890.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 9,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000031",
+                  "region_id": "r5",
+                  "source_text": "Noise-cancelling headset | 10 | 89.00 | 890.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 9,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000031",
+                  "region_id": "r5",
+                  "source_text": "Noise-cancelling headset | 10 | 89.00 | 890.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Noise-cancelling headset",
+              "quantity": "10",
+              "unit_price": "89.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "890.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 10,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000032",
+                  "region_id": "r5",
+                  "source_text": "Desk lamp LED, dimmable",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 10,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000032",
+                  "region_id": "r5",
+                  "source_text": "Desk lamp LED, dimmable | 10 | 34.50 | 345.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 10,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000032",
+                  "region_id": "r5",
+                  "source_text": "Desk lamp LED, dimmable | 10 | 34.50 | 345.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 10,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000032",
+                  "region_id": "r5",
+                  "source_text": "Desk lamp LED, dimmable | 10 | 34.50 | 345.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Desk lamp LED, dimmable",
+              "quantity": "10",
+              "unit_price": "34.50",
+              "discount": null,
+              "tax": null,
+              "line_total": "345.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 2,
+                  "line": 11,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000033",
+                  "region_id": "r5",
+                  "source_text": "Archive storage boxes (pack of 10)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 2,
+                  "line": 11,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000033",
+                  "region_id": "r5",
+                  "source_text": "Archive storage boxes (pack of 10) | 15 | 27.40 | 411.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 2,
+                  "line": 11,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000033",
+                  "region_id": "r5",
+                  "source_text": "Archive storage boxes (pack of 10) | 15 | 27.40 | 411.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 2,
+                  "line": 11,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000033",
+                  "region_id": "r5",
+                  "source_text": "Archive storage boxes (pack of 10) | 15 | 27.40 | 411.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Archive storage boxes (pack of 10)",
+              "quantity": "15",
+              "unit_price": "27.40",
+              "discount": null,
+              "tax": null,
+              "line_total": "411.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 3,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000038",
+                  "region_id": "r7",
+                  "source_text": "Sticky notes 76x76 (pack of 24)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 3,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000038",
+                  "region_id": "r7",
+                  "source_text": "Sticky notes 76x76 (pack of 24) | 20 | 11.90 | 238.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 3,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000038",
+                  "region_id": "r7",
+                  "source_text": "Sticky notes 76x76 (pack of 24) | 20 | 11.90 | 238.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 3,
+                  "line": 3,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000038",
+                  "region_id": "r7",
+                  "source_text": "Sticky notes 76x76 (pack of 24) | 20 | 11.90 | 238.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Sticky notes 76x76 (pack of 24)",
+              "quantity": "20",
+              "unit_price": "11.90",
+              "discount": null,
+              "tax": null,
+              "line_total": "238.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 3,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000039",
+                  "region_id": "r7",
+                  "source_text": "Installation and assembly service (hours)",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 3,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000039",
+                  "region_id": "r7",
+                  "source_text": "Installation and assembly service (hours) | 14 | 45.00 | 630.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 3,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000039",
+                  "region_id": "r7",
+                  "source_text": "Installation and assembly service (hours) | 14 | 45.00 | 630.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 3,
+                  "line": 4,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000039",
+                  "region_id": "r7",
+                  "source_text": "Installation and assembly service (hours) | 14 | 45.00 | 630.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Installation and assembly service (hours)",
+              "quantity": "14",
+              "unit_price": "45.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "630.00"
+            }
+          ],
+          "needs_review": true,
+          "invoice_number": "NW-2026-0417",
+          "invoice_date": "14 October 2026",
+          "supplier_name": "Northwind Office Supply Ltd.",
+          "customer_name": "Contoso Engineering GmbH",
+          "currency": "GBP",
+          "subtotal": "12802.25",
+          "tax": "2560.45",
+          "total": "15362.70"
+        },
+        {
+          "line_items": [
+            {
+              "evidence": {
+                "description": {
+                  "page": 4,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000056",
+                  "region_id": "r12",
+                  "source_text": "Printer servicing, annual contract",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 4,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000056",
+                  "region_id": "r12",
+                  "source_text": "Printer servicing, annual contract | 1 | 480.00 | 480.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 4,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000056",
+                  "region_id": "r12",
+                  "source_text": "Printer servicing, annual contract | 1 | 480.00 | 480.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 4,
+                  "line": 12,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000056",
+                  "region_id": "r12",
+                  "source_text": "Printer servicing, annual contract | 1 | 480.00 | 480.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Printer servicing, annual contract",
+              "quantity": "1",
+              "unit_price": "480.00",
+              "discount": null,
+              "tax": null,
+              "line_total": "480.00"
+            },
+            {
+              "evidence": {
+                "description": {
+                  "page": 4,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000057",
+                  "region_id": "r12",
+                  "source_text": "Replacement drum unit DR-2400",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "quantity": {
+                  "page": 4,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000057",
+                  "region_id": "r12",
+                  "source_text": "Replacement drum unit DR-2400 | 4 | 72.50 | 290.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "unit_price": {
+                  "page": 4,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000057",
+                  "region_id": "r12",
+                  "source_text": "Replacement drum unit DR-2400 | 4 | 72.50 | 290.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                },
+                "discount": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "tax": {
+                  "source_id": null,
+                  "region_id": null,
+                  "source_text": null,
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": false,
+                  "status": "missing"
+                },
+                "line_total": {
+                  "page": 4,
+                  "line": 13,
+                  "kind": "pdf_text_layer",
+                  "source_id": "b0000057",
+                  "region_id": "r12",
+                  "source_text": "Replacement drum unit DR-2400 | 4 | 72.50 | 290.00",
+                  "method": "llm_observation",
+                  "source_method": null,
+                  "grounded": true,
+                  "status": "grounded"
+                }
+              },
+              "description": "Replacement drum unit DR-2400",
+              "quantity": "4",
+              "unit_price": "72.50",
+              "discount": null,
+              "tax": null,
+              "line_total": "290.00"
+            }
+          ],
+          "needs_review": true,
+          "invoice_number": "NW-2026-0418",
+          "invoice_date": "21 October 2026",
+          "supplier_name": "Northwind Office Supply Ltd.",
+          "customer_name": "Contoso Engineering GmbH",
+          "currency": "GBP",
+          "subtotal": "770.00",
+          "tax": "154.00",
+          "total": "924.00"
+        }
+      ],
+      "score": {
+        "fields": {
+          "invoice_number": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          },
+          "invoice_date": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          },
+          "supplier_name": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          },
+          "customer_name": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          },
+          "currency": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          },
+          "subtotal": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          },
+          "tax": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          },
+          "total": {
+            "exact": 2,
+            "normalized": 2,
+            "denominator": 2
+          }
+        },
+        "counts": {
+          "item_fields": 88,
+          "item_exact": 88,
+          "item_normalized": 88,
+          "item_rows": 22,
+          "row_exact": 22,
+          "row_normalized": 22,
+          "assertions": 104,
+          "unsupported": 0
+        },
+        "errors": [],
+        "labeled_review": false,
+        "safety_review": false,
+        "false_accept": false,
+        "labeled_false_accept": false,
+        "reviewed": true
+      }
     }
   ]
 }

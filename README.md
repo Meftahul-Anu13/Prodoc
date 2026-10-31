@@ -10,19 +10,21 @@ Held-out synthetic test set, gateway model `gpt-6.1-sol`. Full report: [eval/rep
 
 | Metric | Old heuristic baseline | AI pipeline |
 |---|---|---|
-| Valid documents processed | 27/27 | **27/27** |
-| Invoice fields correct (excluding the long PDF) | 225/248 = 90.73% | **247/248 = 99.60%** |
-| Line-item fields correct (AI run; baseline includes the long PDF) | not comparable | **246/248 = 99.19%** |
-| Line-item rows correct (AI run; baseline includes the long PDF) | not comparable | **61/62 = 98.39%** |
+| Held-out documents processed (excluding the long PDF) | 27/27 | **27/27** |
+| Invoice fields correct on those documents | 225/248 = 90.73% | **247/248 = 99.60%** |
+| Line-item fields correct (AI only) | not comparable | **246/248 = 99.19%** |
+| Line-item rows correct (AI only) | not comparable | **61/62 = 98.39%** |
+| Extra 4-page, 2-invoice Northwind sample | not run | **16/16 fields correct** |
 | Corrupt files rejected | 7/7 | **7/7** |
-| Time per document | p50 0.31 s, p95 6.33 s | **p50 49.4 s, p95 87.4 s** |
+| Time per document (all 28) | p50 0.31 s, p95 6.33 s | **p50 50.5 s, p95 93.1 s** |
 
 **How to read these numbers**
 
 - The data is synthetic and its labels come from the same generator, so this is not real-world accuracy.
 - All field errors are on `family-5-poor-scan.png`, the deliberately degraded scan.
+- The report file adds the Northwind sample to its totals, so it reads 263/264 (99.62%) over 28 documents.
 - Every AI invoice goes to human review by design, so the 0% false-accept rate proves nothing about detection quality.
-- **The 1000-page PDF was not evaluated.** The model gateway went down during that run. Its reading took 0.3 s and its planning 0.1 s (1000 invoices in 84 requests, about 40 minutes estimated), but a full AI extraction has not finished.
+- **The 1000-page PDF has not finished a full AI extraction.** It is planned into 167 requests of up to 6 invoices, each taking about 200 s, so the whole file needs roughly 2 to 3 hours of model time. 91 of the 167 requests are done and cached. Early attempts failed because 12-invoice batches took 316 s, over the gateway's 280 s limit, and the latest run stopped when the gateway account reached its usage limit. Reading the file (0.7 s) and planning it are measured.
 - Long scanned PDFs still run through OCR as one pass, with no checkpoints.
 
 ## How it works
@@ -142,7 +144,7 @@ Other decisions worth knowing:
 npm --prefix frontend test
 ```
 
-Latest run: **264 backend and evaluation tests passed (80% coverage), 19 frontend tests passed, production build passed.** Saved results: [eval/reports/test-results.md](eval/reports/test-results.md). Model responses in these tests are mocked; real model accuracy comes from the evaluation.
+Latest run: **269 backend and evaluation tests passed (80% coverage), 19 frontend tests passed, production build passed.** Saved results: [eval/reports/test-results.md](eval/reports/test-results.md). Model responses in these tests are mocked; real model accuracy comes from the evaluation.
 
 To repeat the evaluation: `.\.venv-mineru\Scripts\python.exe -m eval.run_ai`.
 
