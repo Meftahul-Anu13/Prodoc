@@ -25,7 +25,7 @@ Each requirement mapped to its code and evidence. Test runs below are from 2026-
 | Database for metadata, text, results, errors, history | Done | `db.py` | See [schema](architecture.md#database-schema) |
 | Keyword filtering | Done | `textsearch.py` FTS5, typo tolerance | API tests |
 | Semantic search | Done | `search.py`, Qdrant, BGE | Live checks in embedded mode; retrieval accuracy not benchmarked |
-| React UI for the full workflow | Done | `frontend/src/App.tsx` | 18 tests; real Chrome check of documents, review, findings, audit and search on 2026-10-31, including phone width. Upload and correction are covered by tests |
+| React UI for the full workflow | Done | `frontend/src/App.tsx` | 19 tests; real Chrome check on 2026-10-31, including phone width, and a [recorded walkthrough](walkthrough.md) |
 | Automated tests for all listed areas | Done | `backend/tests`, `eval/test_eval.py`, `frontend/src` | [Test results](../eval/reports/test-results.md) |
 | Labeled evaluation with measured metrics | **Partial** | `eval/run_ai.py` | [Report](../eval/reports/ai/report.md). 27 valid and 7 corrupt files measured; 1000-page and Northwind files not evaluated |
 

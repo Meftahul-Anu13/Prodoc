@@ -142,7 +142,7 @@ Other decisions worth knowing:
 npm --prefix frontend test
 ```
 
-Latest run: **264 backend and evaluation tests passed (80% coverage), 18 frontend tests passed, production build passed.** Saved results: [eval/reports/test-results.md](eval/reports/test-results.md). Model responses in these tests are mocked; real model accuracy comes from the evaluation.
+Latest run: **264 backend and evaluation tests passed (80% coverage), 19 frontend tests passed, production build passed.** Saved results: [eval/reports/test-results.md](eval/reports/test-results.md). Model responses in these tests are mocked; real model accuracy comes from the evaluation.
 
 To repeat the evaluation: `.\.venv-mineru\Scripts\python.exe -m eval.run_ai`.
 

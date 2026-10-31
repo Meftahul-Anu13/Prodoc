@@ -80,6 +80,7 @@ textarea { resize: vertical; }
 
 /* Panels, tables and status */
 .panel { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 16px; overflow: hidden; }
+.panel:has(.review-split) { overflow: visible; }
 .panel-body { padding: 20px; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 50px; padding: 8px 16px; border-bottom: 1px solid var(--border); }
 .section-heading h2 { margin: 0; font-size: 14px; }

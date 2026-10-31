@@ -1,8 +1,12 @@
 # Walkthrough
 
-**Recording:** link to be added.
+**Recording:** [walkthrough.webm](walkthrough.webm) (2 min 10 s, on-screen captions, no voice).
 
-The script below takes about 6 minutes. Everything shown uses synthetic data.
+It was driven automatically in real Chrome against the real API, worker, database and search index, using synthetic data. It shows live rejection of corrupted and irrelevant uploads, review, evidence, findings, a saved correction, audit history, typo-tolerant and semantic search, and cross-verification.
+
+The model gateway was offline during recording, so the Northwind invoices shown were extracted by `gpt-6.1-sol` on 2026-10-29. The video doesn't show a new extraction running from start to finish.
+
+The script below is for a narrated recording and takes about 6 minutes.
 
 ## Before recording
 
